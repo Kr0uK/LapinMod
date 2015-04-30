@@ -8,16 +8,15 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-import com.kr0uk.lapinmod.
+import com.kr0uk.lapinmod.ModBlocks;
 
 
-
-
-public class Recipes {
+public class ModRecipes {
 
     public static void init() {
 
-        GameRegistry.addRecipe(new ItemStack(com.kr0uk.lapinmod.Blocks.rabbitfurnace), new Object[]
+
+        GameRegistry.addRecipe(new ItemStack(rabbitfurnace), new Object[]
                 {
                         "AAA",
                         "ABA",

@@ -7,5 +7,12 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-public class Items {
+public class ModItems {
+
+    public static void init(){
+
+        
+
+
+    }
 }

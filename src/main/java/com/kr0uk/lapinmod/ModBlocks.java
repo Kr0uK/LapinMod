@@ -12,22 +12,18 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 
-public class Blocks {
+public class ModBlocks {
+
+    public static void init() {
+
+        public class rabbitfurnace extends Block {
 
 
-    rabbitfurnace=new Block();
-
-    rabbitfurnace();
-
-    GameRegistry.registerBlock(rabbitfurnace,"RabbitFurnace");
-
-
-    public class rabbitfurnace extends Block {
-
-        public rabbitfurnace() {
-            super(Material.rock);
-            setBlockName(lapinmod.MODID + "_" + "Rabbit Furnace");
-            setCreativeTab(CreativeTabs.tabBlock);
+            public rabbitfurnace() {
+                super(Material.rock);
+                setBlockName(lapinmod.MODID + "_" + "Rabbit Furnace");
+            }
         }
+
     }
 }
