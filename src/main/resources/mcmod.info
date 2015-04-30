@@ -1,0 +1,16 @@
+[
+{
+  "modid": "lapinmod",
+  "name": "Lapin Mod",
+  "description": "Un mod avec des lapins.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Kr0uK"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
