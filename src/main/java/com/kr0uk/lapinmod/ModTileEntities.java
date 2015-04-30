@@ -13,14 +13,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.tileentity.TileEntity;
 public class TileEntities {
 
-public class rabbitfurnace extends TileEntity {
 
-    public rabbitfurnace()
-    {
-        super(Material.rock);
-        setBlockName(lapinmod.MODID + "_" + "Rabbit Furnace");
-        setCreativeTab(CreativeTabs.tabBlock);
-    }
 
 
 }
