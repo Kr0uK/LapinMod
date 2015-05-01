@@ -1,4 +1,4 @@
-package com.kr0uk.lapinmod;
+package com.kr0uk.lapinmod.items;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -7,12 +7,20 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-public class ModItems {
+import com.kr0uk.lapinmod.items.ModItems;
 
-    public static void init(){
+public class ModItems extends Items
 
-        
+{
+    public carrotblend(){
 
+        super();
 
     }
+
+
+
+
+
+
 }
