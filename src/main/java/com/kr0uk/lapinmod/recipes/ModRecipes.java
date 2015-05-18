@@ -12,13 +12,7 @@ public class ModRecipes {
 
     public static void init() {
 
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.rabbitfurnace), new Object[]
-                {
-                        "AAA",
-                        "ABA",
-                        "AAA",
-                        'A', net.minecraft.init.Blocks.cobblestone, 'B', Items.carrot
-                });
+
 
 
 

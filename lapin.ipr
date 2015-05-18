@@ -169,6 +169,13 @@
       </item>
     </group>
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="icfai">
+      <words>
+        <w>carrotblend</w>
+      </words>
+    </dictionary>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/lapin.iml" filepath="$PROJECT_DIR$/lapin.iml" />

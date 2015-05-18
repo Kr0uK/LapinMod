@@ -5,6 +5,11 @@ package com.kr0uk.lapinmod;
  */
 
 
+import com.kr0uk.lapinmod.configuration.ConfigHandler;
+import com.kr0uk.lapinmod.init.BlockInit;
+import com.kr0uk.lapinmod.init.ItemInit;
+import com.kr0uk.lapinmod.init.RecipeInit;
+import com.kr0uk.lapinmod.init.TileEntityInit;
 import com.kr0uk.lapinmod.items.ModItems;
 import com.kr0uk.lapinmod.proxy.IProxy;
 import com.kr0uk.lapinmod.recipes.ModRecipes;
@@ -19,9 +24,12 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import com.kr0uk.lapinmod.blocks.ModBlocks;
+import com.kr0uk.lapinmod.reference.reference;
+
+import javax.security.auth.login.Configuration;
 
 
-@Mod(modid = lapinmod.MODID, version = lapinmod.VERSION)
+@Mod(modid = reference.ModId, version = reference.Version)
 
 
 
@@ -32,9 +40,6 @@ public class lapinmod {
 
     @SidedProxy(clientSide = "com.kr0uk.lapinmod.proxy.ClientProxy", serverSide = "com.kr0uk.lapinmod.proxy.ServerProxy")
     public static IProxy proxy;
-
-    public static final String MODID = "lapinmod";
-    public static final String VERSION = "1.0";
 
 
     public static CreativeTabs lapinTab = new CreativeTabs("LapinMod")
@@ -48,21 +53,25 @@ public class lapinmod {
 
 
     @EventHandler
-    public void init(FMLPreInitializationEvent event)
+    public void preinit(FMLPreInitializationEvent event)
     {
 
-        ModBlocks.init();
-        ModItems.init();
-        ModTileEntities.init();
-        ModRecipes.init();
+        ConfigHandler.init(event.getSuggestedConfigurationFile());
+        BlockInit.init();
+        ItemInit.init();
+        TileEntityInit.init();
+        RecipeInit.init();
 
     }
 
     public void init(FMLInitializationEvent event) {
     }
 
-    public void init(FMLPostInitializationEvent event) {
+
+    public void postinit(FMLPostInitializationEvent event) {
     }
+
+
     }
 
 
@@ -70,4 +79,4 @@ public class lapinmod {
 
 
 
-}
+

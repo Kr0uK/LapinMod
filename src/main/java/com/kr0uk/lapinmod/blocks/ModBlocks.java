@@ -13,51 +13,21 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import com.kr0uk.lapinmod.lapinmod;
 
 
-public class ModBlocks {
+public class ModBlocks extends Blocks {
 
-    public static Block rabbitfurnace;
-    public static Block rabbitgrinder;
+    public ModBlocks(){
 
-
-
-
-
-
-    public class rabbitfurnace extends Block {
-
-        public rabbitfurnace() {
-
-            super(Material.ground);
-            setBlockName(lapinmod.MODID + "_" + "Rabbit Furnace");
-        }
+        super();
     }
 
-    public class rabbitgrinder extends Block {
-
-        public rabbitgrinder() {
-            super(Material.ground);
-            setBlockName(lapinmod.MODID + "_" + "Rabbit Grinder");
-        }
-    }
 
 
 
 
 
   }
-        public void init(){
-
-            rabbitfurnace = new rabbitfurnace();
-
-            rabbitgrinder = new rabbitgrinder();
-
-            GameRegistry.registerBlock(rabbitfurnace, "Rabbit Furnace");
-            GameRegistry.registerBlock(rabbitgrinder, "Rabbit Grinder");
-
-
-        }
 
 
 
-    }
+
 
